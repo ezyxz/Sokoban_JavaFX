@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="m_start_anPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+      <Button fx:id="m_start_button" layoutX="191.0" layoutY="208.0" mnemonicParsing="false" onAction="#start_button_action" prefHeight="48.0" prefWidth="157.0" text="PLAY" />
+      <Label fx:id="m_start_home_label" layoutX="126.0" layoutY="14.0" prefHeight="61.0" prefWidth="242.0" text="BestSokobanEverV6" textFill="#bc4343">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ComboBox fx:id="m_colors_combobox" layoutX="249.0" layoutY="77.0" onAction="#color_combobox_action" prefHeight="29.0" prefWidth="157.0" />
+      <Label fx:id="m_start_colorSelect_Label" layoutX="126.0" layoutY="72.0" prefHeight="39.0" prefWidth="85.0" text="Colors">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m_start_userName_Label" layoutX="123.0" layoutY="134.0" prefHeight="39.0" prefWidth="92.0" text="UserName">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="m_start_userName_TextField" layoutX="247.0" layoutY="141.0" />
+      <Button fx:id="m_start_viewUser_button" layoutX="362.0" layoutY="283.0" mnemonicParsing="false" onAction="#start_view_button" text="View Level Record" />
+      <ImageView fitHeight="147.0" fitWidth="161.0" layoutX="14.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sprites.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="m_music_button" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onAction="#start_music" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@on.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+
+   </children>
+</AnchorPane>
